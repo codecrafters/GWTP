@@ -33,6 +33,7 @@ import com.gwtplatform.mvp.client.proxy.PlaceManager;
 import com.gwtplatform.mvp.client.proxy.PlaceRequest;
 import com.gwtplatform.mvp.client.proxy.Proxy;
 import com.gwtplatform.mvp.client.proxy.RevealRootContentEvent;
+import com.gwtplatform.samples.basic.client.application.MainPagePresenter;
 import com.gwtplatform.samples.basic.shared.SendTextToServer;
 import com.gwtplatform.samples.basic.shared.SendTextToServerResult;
 

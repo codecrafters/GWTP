@@ -24,6 +24,7 @@ import com.google.inject.Provider;
 
 import com.gwtplatform.dispatch.client.gin.DispatchAsyncModule;
 import com.gwtplatform.mvp.client.proxy.PlaceManager;
+import com.gwtplatform.samples.basic.client.application.MainPagePresenter;
 
 /**
  * @author Philippe Beaudoin

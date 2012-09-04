@@ -22,6 +22,7 @@ import com.google.inject.Inject;
 import com.gwtplatform.mvp.client.proxy.PlaceManagerImpl;
 import com.gwtplatform.mvp.client.proxy.PlaceRequest;
 import com.gwtplatform.mvp.client.proxy.TokenFormatter;
+import com.gwtplatform.samples.basic.client.application.MainPagePresenter;
 
 /**
  * @author Philippe Beaudoin

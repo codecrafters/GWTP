@@ -18,6 +18,8 @@ package com.gwtplatform.samples.basic.client;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.mvp.client.gin.DefaultModule;
+import com.gwtplatform.samples.basic.client.application.MainPagePresenter;
+import com.gwtplatform.samples.basic.client.application.MainPageView;
 
 /**
  * @author Philippe Beaudoin
