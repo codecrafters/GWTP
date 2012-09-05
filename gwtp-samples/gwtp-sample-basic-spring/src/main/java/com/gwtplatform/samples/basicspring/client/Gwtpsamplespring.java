@@ -25,10 +25,9 @@ import com.google.gwt.core.client.GWT;
  * @author Philippe Beaudoin
  */
 public class Gwtpsamplespring implements EntryPoint {
-  public final MyGinjector ginjector = GWT.create(MyGinjector.class);
+  private final MyGinjector ginjector = GWT.create(MyGinjector.class);
 
   public void onModuleLoad() {
-
     DelayedBindRegistry.bind(ginjector);
 
     ginjector.getPlaceManager().revealCurrentPlace();

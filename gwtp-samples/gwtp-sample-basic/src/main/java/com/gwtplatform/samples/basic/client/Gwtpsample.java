@@ -20,6 +20,7 @@ import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 
 import com.gwtplatform.mvp.client.DelayedBindRegistry;
+import com.gwtplatform.samples.basic.client.gin.MyGinjector;
 
 /**
  * @author Philippe Beaudoin
