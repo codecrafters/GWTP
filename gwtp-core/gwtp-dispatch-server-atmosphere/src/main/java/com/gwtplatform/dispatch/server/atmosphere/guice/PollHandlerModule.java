@@ -18,11 +18,11 @@ package com.gwtplatform.dispatch.server.atmosphere.guice;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.internal.UniqueAnnotations;
-import com.gwtplatform.dispatch.server.actionhandler.ActionHandler;
 import com.gwtplatform.dispatch.server.actionhandlervalidator.ActionHandlerValidatorClass;
 import com.gwtplatform.dispatch.server.actionhandlervalidator.ActionHandlerValidatorMap;
 import com.gwtplatform.dispatch.server.actionhandlervalidator.ActionHandlerValidatorMapImpl;
 import com.gwtplatform.dispatch.server.actionvalidator.ActionValidator;
+import com.gwtplatform.dispatch.server.atmosphere.actionhandler.PollActionHandler;
 import com.gwtplatform.dispatch.server.atmosphere.AbstractPollDispatchServiceImpl;
 import com.gwtplatform.dispatch.server.atmosphere.PollDispatch;
 import com.gwtplatform.dispatch.server.guice.DispatchModule;
@@ -67,7 +67,7 @@ public abstract class PollHandlerModule extends AbstractModule {
    *          bind
    */
   protected <A extends Action<R>, R extends Result> void bindPollHandler(
-      Class<A> actionClass, Class<? extends ActionHandler<A, R>> handlerClass) {
+      Class<A> actionClass, Class<? extends PollActionHandler<A, R>> handlerClass) {
     bind(ActionHandlerValidatorMap.class).annotatedWith(
         UniqueAnnotations.create()).toInstance(
         new ActionHandlerValidatorMapImpl<A, R>(actionClass,
@@ -85,7 +85,7 @@ public abstract class PollHandlerModule extends AbstractModule {
    *          and bind
    */
   protected <A extends Action<R>, R extends Result> void bindPollHandler(
-      Class<A> actionClass, Class<? extends ActionHandler<A, R>> handlerClass,
+      Class<A> actionClass, Class<? extends PollActionHandler<A, R>> handlerClass,
       Class<? extends ActionValidator> actionValidator) {
     bind(ActionHandlerValidatorMap.class).annotatedWith(
         UniqueAnnotations.create()).toInstance(
