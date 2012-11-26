@@ -19,6 +19,7 @@
         <module>gwtp-dispatch-client</module>
         <module>gwtp-dispatch-shared</module>
         <module>gwtp-dispatch-server</module>
+        <module>gwtp-dispatch-server-atmosphere</module>
         <module>gwtp-dispatch-server-guice</module>
         <module>gwtp-dispatch-server-spring</module>
         <module>gwtp-dispatch-test</module>
@@ -127,6 +128,13 @@
                 <groupId>${project.groupId}</groupId>
                 <artifactId>gwtp-dispatch-server</artifactId>
                 <version>${project.version}</version>
+                <scope>provided</scope> <!-- Not needed server-side -->
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>gwtp-dispatch-server-atmosphere</artifactId>
+                <version>${project.version}</version>
+                <scope>provided</scope> <!-- Not needed server-side -->
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
